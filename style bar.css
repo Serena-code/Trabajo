@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{ 
+    background-color: rgb(197, 224, 248);
+    font-family: 'Source Sans Pro', sans-serif ;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+header nav{
+    width: 100%;
+    max-width:100% ;
+    margin: 0px , 20px , 20px , 20px;
+    background-color: #024959;
+}
+.menu_bar{
+    display: none;
+}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+header nav ul li{
+    float:left;
+}
+header nav ul li a{
+    color: #ffff;
+    padding:20px;
+    display: block;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background-color: #037E8C;
+    text-decoration: none;
+    color: #ffff;
+
+}
+/*Poniendo block el padding se aplica arriba y abajo, sin el solo se aplica a los costados */
+
+header nav ul li span{
+    margin-right: 10px;
+}
+
+@media screen and ( max-width: 780px ) {
+    header nav{
+        width: 80%;
+        height: 100%;
+        left:-100%;
+        margin:0;
+        position:fixed;
+    }
+    header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgb(255,255,255,0.3);
+    }
+    .menu_bar{
+        display:block;
+        width: 100%;
+        background-color: #cccc;
+    }
+
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        background-color: #024959;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu_bar span{
+        float:right;
+        font-size: 25px;
+    }
+
+}
+
+/*
+Contenido
+*/
+.bla{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+.content {
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.cont{
+    margin: 10px;
+    padding:15px;
+}
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta .card{
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.tarjeta .card img{
+    height: 200px;
+}
+
+
+/*Footer*/
+
+.contenedor-footer{
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+    margin:0px;
+}
+
+
+.footer-content{
+    margin:0px;
+    padding:0px;
+    background-color: #3f5568;
+    
+    
+}
+.socials{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.socials a{
+    font-size: 30px;
+    color: #ffff;
+    
+}
+
+.outer-footer{
+    padding:10px;
+    text-align: center;
+    color: #ffff;
+    font-size: 13px;
+    background-color: #6987a1;
+}
+
+
+
